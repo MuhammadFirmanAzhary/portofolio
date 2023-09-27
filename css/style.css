@@ -83,8 +83,10 @@ span{
 }
 .home-img{
     margin-bottom:5rem;
+   
 }
 .home-img img{
+    border-radius:2rem;
     width:35vw;
     animation:floatImage 4s ease-in-out infinite;
 }
@@ -147,6 +149,7 @@ span{
     margin-bottom:5rem;
 }
 .about-img img{
+    border-radius:2rem;
     width:35vw;
 }
 .heading{
