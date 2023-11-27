@@ -72,8 +72,7 @@
                 <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat similique aspernatur quisquam,
-                    laboriosam dolorum corrupti labore officiis a illo ad dolor reiciendis, provident unde ipsum, vitae
-                    quis exercitationem ea molestias.</p>
+                    </p>
                 <a href="#" class="btn">Read More</a>
             </div>
 
@@ -159,17 +158,17 @@
        <!-- contact section design -->
        <section class="contact" id="contact">
             <h2 class="heading"> Contact <span>Me!</span></h2>
-            <form action="#">
+            <form id="whatsappForm">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
+                    <input type="text" id="fullName" placeholder="Full Name">
+                    <input type="email" id="email" placeholder="Email Address">
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Mobile number">
-                    <input type="text" placeholder="Email Subject">
+                    <input type="tel" id="mobileNumber" placeholder="Mobile number">
+                    <input type="text" id="emailSubject" placeholder="Email Subject">
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="button" value="Send Message" class="btn" onclick="sendMessage()">
             </form>
        </section>
         <!-- footer section design -->

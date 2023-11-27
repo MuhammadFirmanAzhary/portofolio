@@ -52,3 +52,19 @@ const typed = new Typed('.multiple-text',{
     backDelay:1000,
     loop:true
 });
+function sendMessage() {
+    var fullName = encodeURIComponent(document.getElementById('fullName').value);
+    var email = encodeURIComponent(document.getElementById('email').value);
+    var mobileNumber = encodeURIComponent(document.getElementById('mobileNumber').value);
+    var emailSubject = encodeURIComponent(document.getElementById('emailSubject').value);
+    var message = encodeURIComponent(document.getElementById('message').value);
+
+    var whatsappLink = 'https://wa.me/6282246431454/?text=' +
+        'Full%20Name:%20' + fullName +
+        '%0AEmail:%20' + email +
+        '%0AMobile%20Number:%20' + mobileNumber +
+        '%0AEmail%20Subject:%20' + emailSubject +
+        '%0AMessage:%20' + message;
+
+    window.open(whatsappLink);
+}
